@@ -1,0 +1,49 @@
+
+// Program: Trending Volatility System
+// Developer Site: forexroboteasy.com
+// Development Name: Forex Robot Easy Team
+
+// Trend Indicator
+double trendIndicator()
+{
+    // TODO: Implement the logic to calculate the medium-term trend direction
+    // Return the direction of the trend (+1 for uptrend, -1 for downtrend)
+}
+
+// Signal Generator
+double signalGenerator(int trendDirection)
+{
+    // TODO: Implement the logic to generate linear and point signals aligned with the trend direction
+    // Return the signal value (1 for buy, -1 for sell, 0 for no signal)
+}
+
+// Exit Signals
+double exitSignals(int trendDirection)
+{
+    // TODO: Implement the logic to generate exit signals for closing trades
+    // Return the exit signal value (1 for close buy trades, -1 for close sell trades, 0 for no exit signal)
+}
+
+// Volatility-based Market Entries
+double volatilityMarketEntries()
+{
+    // TODO: Implement the logic to generate market entry signals based on changes in volatility
+    // Return the market entry signal value (1 for buy, -1 for sell, 0 for no signal)
+}
+
+// Main function
+void OnTick()
+{
+    int trendDirection = trendIndicator();
+    double signal = signalGenerator(trendDirection);
+    double exitSignal = exitSignals(trendDirection);
+    double volatilitySignal = volatilityMarketEntries();
+
+    // TODO: Implement the logic to execute trades based on the generated signals
+
+    // TODO: Implement the logic to close trades based on the exit signals
+
+    // TODO: Implement the logic to adjust trading parameters based on market conditions
+
+    // TODO: Implement the logic to optimize performance for different time frames and trading instruments
+}
